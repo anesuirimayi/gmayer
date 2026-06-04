@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Logo | General Mear - Symbolism & Interpretation</title>
+    <title>Articles & Insights | General Mear - Elite Security & Investigations</title>
+    <meta name="description" content="Expert insights, security analysis, and industry updates from General Mear Investigations. Stay informed on the latest in private security, criminal investigations, and VIP protection.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Theme Color Meta Tags -->
@@ -146,6 +147,8 @@
             transition: all 0.3s ease;
             letter-spacing: 1px;
             box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);
+            text-decoration: none;
+            display: inline-block;
         }
         
         .cta-button:hover {
@@ -163,42 +166,42 @@
             cursor: pointer;
         }
         
-        /* Logo Page Banner */
-        .logo-banner {
-            background: linear-gradient(rgba(10, 15, 10, 0.9), rgba(10, 15, 10, 0.95)), url('../images/hero-image.png');
+        /* Page Banner */
+        .articles-banner {
+            background: linear-gradient(rgba(10, 15, 10, 0.85), rgba(10, 15, 10, 0.95)), url('../images/hero-image.png');
             background-size: cover;
             background-position: center;
-            padding: 140px 0 60px;
+            padding: 140px 0 80px;
             margin-bottom: 60px;
             text-align: center;
         }
         
-        .logo-banner h1 {
+        .articles-banner h1 {
             font-size: 3rem;
             color: var(--light-text);
             margin-bottom: 20px;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
         
-        .logo-banner h1 span {
+        .articles-banner h1 span {
             color: var(--accent-gold);
         }
         
-        .logo-banner p {
+        .articles-banner p {
             font-size: 1.2rem;
             color: var(--medium-text);
             max-width: 700px;
             margin: 0 auto;
         }
         
-        /* Logo Content Section */
-        .logo-content {
-            padding: 60px 0;
+        /* Articles Section */
+        .articles-section {
+            padding: 80px 0;
             background-color: var(--dark-bg);
             position: relative;
         }
         
-        .logo-content::before {
+        .articles-section::before {
             content: '';
             position: absolute;
             top: 0;
@@ -208,133 +211,244 @@
             background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
         }
         
-        .logo-display-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--light-text);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+        
+        .section-header p {
+            color: var(--medium-text);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+        
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 40px;
             margin-bottom: 60px;
         }
         
-        .logo-large {
-            width: 300px;
-            height: auto;
-            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
-            transition: transform 0.5s ease;
-        }
-        
-        .logo-large:hover {
-            transform: scale(1.05);
-        }
-        
-        .logo-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .logo-intro h2 {
-            font-size: 2.2rem;
-            color: var(--light-text);
-            margin-bottom: 20px;
-        }
-        
-        .logo-intro p {
-            color: var(--medium-text);
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-        
-        /* Symbolism Sections */
-        .symbolism-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-        
-        .symbol-card {
+        .article-card {
             background-color: var(--card-bg);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
             border: 1px solid rgba(46, 139, 87, 0.1);
             transition: all 0.3s ease;
-        }
-        
-        .symbol-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-            border-color: rgba(46, 139, 87, 0.3);
-        }
-        
-        .symbol-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 10px;
+            height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-            background: linear-gradient(135deg, rgba(46, 139, 87, 0.2), rgba(26, 71, 42, 0.2));
+            flex-direction: column;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(46, 139, 87, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+        
+        .article-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, var(--accent-green), var(--primary-green));
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+        
+        .article-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
             color: var(--accent-green);
         }
         
-        .symbol-card h3 {
-            font-size: 1.4rem;
-            color: var(--light-text);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .article-meta i {
+            margin-right: 5px;
         }
         
-        .symbol-card p {
+        .article-title {
+            font-size: 1.5rem;
+            color: var(--light-text);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .article-excerpt {
             color: var(--medium-text);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            flex: 1;
+        }
+        
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin-top: auto;
+        }
+        
+        .read-more:hover {
+            color: var(--accent-gold);
+            gap: 12px;
+        }
+        
+        /* Featured Article */
+        .featured-article {
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, rgba(10, 47, 28, 0.4), rgba(26, 71, 42, 0.2));
+            border-radius: 16px;
+            border: 1px solid rgba(46, 139, 87, 0.2);
+            overflow: hidden;
+        }
+        
+        .featured-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .featured-image {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .featured-content {
+            padding: 40px 40px 40px 0;
+        }
+        
+        .featured-badge {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        
+        .featured-content h2 {
+            font-size: 2rem;
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+        
+        .featured-content p {
+            color: var(--medium-text);
+            margin-bottom: 25px;
             line-height: 1.7;
         }
         
-        /* Full Description */
-        .full-description {
-            background-color: var(--card-bg);
-            border-radius: 10px;
-            padding: 40px;
-            margin-top: 60px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(46, 139, 87, 0.1);
-            line-height: 1.8;
+        /* Newsletter CTA */
+        .newsletter-cta {
+            text-align: center;
+            padding: 60px;
+            background: linear-gradient(135deg, rgba(10, 47, 28, 0.3), rgba(26, 71, 42, 0.3));
+            border-radius: 16px;
+            border: 1px solid rgba(46, 139, 87, 0.2);
+            margin-top: 40px;
         }
         
-        .full-description h2 {
+        .newsletter-cta h3 {
             font-size: 1.8rem;
             color: var(--light-text);
-            margin-bottom: 30px;
-            text-align: center;
-            border-bottom: 2px solid var(--accent-green);
-            padding-bottom: 15px;
+            margin-bottom: 15px;
         }
         
-        .full-description p {
+        .newsletter-cta p {
             color: var(--medium-text);
-            margin-bottom: 25px;
-            font-size: 1.05rem;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        .full-description strong {
-            color: var(--accent-gold);
-            font-weight: 600;
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 15px;
         }
         
-        .full-description .firm-name {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(46, 139, 87, 0.2);
-            font-size: 1.2rem;
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 20px;
+            background-color: rgba(10, 15, 10, 0.7);
+            border: 1px solid rgba(46, 139, 87, 0.3);
+            border-radius: 6px;
             color: var(--light-text);
+            font-size: 1rem;
+        }
+        
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+        }
+        
+        .newsletter-form button {
+            background: linear-gradient(135deg, var(--accent-green), var(--primary-green));
+            border: none;
+            padding: 14px 30px;
+            border-radius: 6px;
+            color: white;
             font-weight: 600;
-            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-form button:hover {
+            background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+            transform: translateY(-2px);
         }
         
         /* Footer Section Styles */
@@ -434,35 +548,30 @@
             color: var(--accent-green);
         }
         
-        .contact-info {
+        .contact-info-footer {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
         
-        .contact-item {
+        .contact-item-footer {
             display: flex;
             gap: 15px;
             align-items: flex-start;
         }
         
-        .contact-item i {
+        .contact-item-footer i {
             color: var(--accent-green);
             font-size: 1.1rem;
             margin-top: 3px;
             width: 20px;
         }
         
-        .contact-item p {
+        .contact-item-footer p {
             color: var(--medium-text);
             font-size: 0.95rem;
             line-height: 1.5;
             margin-bottom: 3px;
-        }
-        
-        .contact-item strong {
-            color: var(--light-text);
-            font-weight: 600;
         }
         
         .footer-bottom {
@@ -474,53 +583,26 @@
             flex-wrap: wrap;
         }
         
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-link {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--medium-text);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-        
-        .social-link:hover {
-            background-color: var(--accent-green);
-            color: white;
-            transform: translateY(-3px);
-        }
-        
-        .social-link:nth-child(2):hover {
-            background-color: #ff0000; /* YouTube red */
-        }
-        
         .copyright {
             color: var(--medium-text);
             font-size: 0.9rem;
             text-align: right;
         }
         
-        .copyright p {
-            margin-bottom: 5px;
-        }
-        
-        .copyright .license {
-            font-size: 0.8rem;
-            color: rgba(176, 176, 176, 0.7);
-            max-width: 400px;
-        }
-        
         /* Mobile Responsive */
         @media (max-width: 992px) {
+            .featured-inner {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-image {
+                height: 300px;
+            }
+            
+            .featured-content {
+                padding: 30px;
+            }
+            
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -540,37 +622,73 @@
             .mobile-toggle {
                 display: block;
             }
-           
+            
+            nav {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(10, 15, 10, 0.98);
+                padding: 20px;
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: all 0.4s ease;
+                visibility: hidden;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                border-top: 1px solid rgba(46, 139, 87, 0.2);
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav a {
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+            
+            .header-container {
+                padding: 12px 0;
+            }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+            
             .cta-button {
                 display: none;
             }
             
-            .logo-banner {
-                padding: 120px 0 50px;
+            .articles-banner {
+                padding: 120px 0 60px;
             }
             
-            .logo-banner h1 {
+            .articles-banner h1 {
                 font-size: 2.5rem;
             }
             
-            .logo-banner p {
-                font-size: 1.1rem;
+            .section-header h2 {
+                font-size: 2rem;
             }
             
-            .logo-large {
-                width: 250px;
-            }
-            
-            .logo-intro h2 {
-                font-size: 1.8rem;
-            }
-            
-            .symbolism-grid {
+            .articles-grid {
                 grid-template-columns: 1fr;
             }
             
-            .full-description {
-                padding: 30px;
+            .newsletter-form {
+                flex-direction: column;
             }
             
             .footer-links {
@@ -587,167 +705,79 @@
             .copyright {
                 text-align: center;
             }
-            
-            .copyright .license {
-                max-width: 100%;
-            }
         }
         
         @media (max-width: 480px) {
-            .logo-banner h1 {
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+            
+            .logo-text span {
+                font-size: 0.8rem;
+            }
+            
+            .articles-banner h1 {
                 font-size: 2rem;
             }
             
-            .logo-large {
-                width: 200px;
+            .section-header h2 {
+                font-size: 1.8rem;
             }
             
-            .logo-intro h2 {
-                font-size: 1.6rem;
-            }
-            
-            .full-description h2 {
+            .featured-content h2 {
                 font-size: 1.5rem;
             }
             
-            .footer-column h4 {
-                font-size: 1.1rem;
-            }
-            
-            .footer-logo-text h3 {
+            .article-title {
                 font-size: 1.3rem;
             }
         }
 
-/* Mobile Responsive - Add this to the existing media query section */
-@media (max-width: 768px) {
-    .mobile-toggle {
-        display: block;
-    }
-    
-    nav {
-        position: fixed;
-        top: 70px; /* This might need adjustment */
-        left: 0;
-        width: 100%;
-        background-color: rgba(10, 15, 10, 0.98);
-        padding: 20px;
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: all 0.4s ease;
-        visibility: hidden;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        border-top: 1px solid rgba(46, 139, 87, 0.2);
-    }
-    
-    nav.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    nav a {
-        display: block;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    
-    nav a:last-child {
-        border-bottom: none;
-    }
-    
-    .header-container {
-        padding: 12px 0;
-    }
-    
-    .logo-img {
-        height: 40px; /* Matches home page mobile size */
-    }
-    
-    .logo-text h1 {
-        font-size: 1.5rem; /* Matches home page mobile size */
-    }
-    
-    .logo-text span {
-        font-size: 0.9rem; /* Keep consistent with home page */
-    }
 
-    .cta-button {
-                 display: none;
-            }
-    
-    .contact-banner {
-        padding: 120px 0 60px;
-    }
-    
-    .contact-banner h1 {
-        font-size: 2.5rem;
-    }
-    
-    .contact-banner p {
-        font-size: 1.1rem;
-    }
-    
-    .section-header h2 {
-        font-size: 2rem;
-    }
-    
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
+.no-articles-message {
         text-align: center;
+        padding: 80px 40px;
+        background: linear-gradient(135deg, rgba(10, 47, 28, 0.3), rgba(26, 71, 42, 0.2));
+        border-radius: 16px;
+        border: 1px solid rgba(46, 139, 87, 0.2);
+        max-width: 700px;
+        margin: 0 auto;
     }
     
-    .copyright {
-        text-align: center;
+    .no-articles-message i {
+        font-size: 4rem;
+        color: var(--accent-gold);
+        margin-bottom: 25px;
+        opacity: 0.7;
     }
     
-    .copyright .license {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Add the extra small screen styles from home page */
-    .logo-text h1 {
-        font-size: 1.3rem; /* Matches home page */
-    }
-    
-    .logo-text span {
-        font-size: 0.8rem; /* Matches home page */
-    }
-    
-    .contact-banner h1 {
-        font-size: 2rem;
-    }
-    
-    .section-header h2 {
+    .no-articles-message h3 {
         font-size: 1.8rem;
+        color: var(--light-text);
+        margin-bottom: 15px;
     }
     
-    .company-text h3 {
-        font-size: 1.5rem;
+    .no-articles-message p {
+        color: var(--medium-text);
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 500px;
+        margin: 0 auto;
     }
     
-    .footer-column h4 {
-        font-size: 1.1rem;
+    @media (max-width: 768px) {
+        .no-articles-message {
+            padding: 50px 25px;
+        }
+        
+        .no-articles-message i {
+            font-size: 3rem;
+        }
+        
+        .no-articles-message h3 {
+            font-size: 1.5rem;
+        }
     }
-    
-    .footer-logo-text h3 {
-        font-size: 1.3rem;
-    }
-}
-
     </style>
 </head>
 <body id="top">
@@ -756,7 +786,7 @@
         <div class="container header-container">
             <a href="../" style="text-decoration: none;">
                 <div class="logo-container">
-                    <img src="../images/logo.png" alt="Mayer Investigations Logo" class="logo-img">
+                    <img src="../images/logo.png" alt="General Mear Logo" class="logo-img">
                     <div class="logo-text">
                         <h1>GENERAL MEAR</h1>
                         <span>INVESTIGATIONS & SECURITY</span>
@@ -771,9 +801,9 @@
             <nav id="mainNav">
                 <ul>
                     <li><a href="../">Home</a></li>
-                    <li><a href="./">About</a></li>
+                    <li><a href="../about/">About</a></li>
                     <li><a href="../#services">Services</a></li>
-                    <li><a href="../articles/">Articles</a></li>
+                    <li><a href="./">Articles</a></li>
                     <li><a href="../contact/">Contact</a></li>
                 </ul>
             </nav>
@@ -782,104 +812,59 @@
         </div>
     </header>
 
-    <!-- Logo Banner -->
-    <section class="logo-banner">
+    <!-- Articles Banner -->
+    <section class="articles-banner">
         <div class="container">
-            <h1>Our <span>Logo</span> & Symbolism</h1>
-            <p>Understanding the profound meaning behind the General Mear emblem</p>
+            <h1>Security <span>Insights</span></h1>
+            <p>Expert analysis, industry updates, and tactical intelligence from Southern Africa's premier Tier 01 security provider.</p>
         </div>
     </section>
 
-    <!-- Logo Content -->
-    <section class="logo-content">
+
+<div class="no-articles-message">
+    <i class="fas fa-newspaper"></i>
+    <h3>No Articles Published Yet</h3>
+</div>
+
+    <!-- Articles Section 
+    <section class="articles-section">
         <div class="container">
-            <div class="logo-display-section">
-                <img src="../images/logo.png" alt="General Mear Security Logo" class="logo-large">
-                
-                <div class="logo-intro">
-                    <h2>General Mear Investigations and VIP Protection Security Firm</h2>
-                    <p>Logo Symbolism & Interpretation</p>
-                </div>
-            </div>
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Stay informed with our expert perspectives on security, investigations, and protection strategies</p>
+            </div> -->
             
-            <!-- Symbolism Grid -->
-            <div class="symbolism-grid">
-                <div class="symbol-card">
-                    <div class="symbol-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-  <!-- Sword blade pointing up -->
-  <path d="M12 1L14.5 7H9.5L12 1Z" fill="#c0c0c0"/> <!-- Tip -->
-  <rect x="11" y="7" width="2" height="12" fill="#c0c0c0"/> <!-- Blade -->
-  
-  <!-- Crossguard -->
-  <rect x="8" y="19" width="8" height="1" fill="#8B4513"/>
-  <rect x="9" y="18" width="6" height="1" fill="#8B4513"/>
-  
-  <!-- Handle -->
-  <rect x="11.5" y="20" width="1" height="3" fill="#8B4513"/>
-  
-  <!-- Pommel -->
-  <circle cx="12" cy="24" r="1" fill="#FFD700"/>
-</svg>
-                    </div>
-                    <h3>The Sword</h3>
-                    <p>The upright, forward-facing sword stands as a timeless emblem of justice, authority and defense. It represents our unwavering commitment to uphold justice, law and national security.</p>
-                </div>
-                
-                <div class="symbol-card">
-                    <div class="symbol-icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
-                    <h3>Blood Splatter</h3> 
-                    <p>Denotes forensic investigation rigor - blood pattern analysis and DNA recovery. Also honors the sacrificial blood shed by comrades during the Chimurenga-Umvukela struggles.</p>
-                </div>
-                
-                <div class="symbol-card">
-                    <div class="symbol-icon">
-                        <i class="fas fa-flag"></i>
-                    </div>
-                    <h3>The Flag</h3>
-                    <p>Affirms absolute loyalty to Zimbabwe's Constitution, sovereignty and democratic leadership. Represents unity, identity, and duty - values every Mayer operative lives by.</p>
-                </div>
-                
-                <div class="symbol-card">
-                    <div class="symbol-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>The Lightning</h3>
-                    <p>Symbolizes speed, accuracy and tactical precision. Reflects our ability to respond rapidly, execute with surgical effectiveness and make decisive interventions within critical timeframes.</p>
-                </div>
-            </div>
             
-            <!-- Full Description -->
-            <div class="full-description">
-                <h2>Complete Logo Interpretation</h2>
+            <!-- Articles Grid -->
+            <div class="articles-grid">
+
+                <!-- Article 1 
+                <div class="article-card">
+                    <div class="article-image" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=600&h=400&fit=crop'); background-size: cover;">
+                        <span class="article-category">Investigations</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> March 15, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="article-title">Intelligence-Led Criminal Investigations: A Modern Approach</h3>
+                        <p class="article-excerpt">Traditional investigation methods are no longer sufficient in today's complex criminal landscape. This article explores how intelligence-led strategies, predictive analysis, and advanced forensic techniques are revolutionizing criminal defense investigations and complex case resolution.</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> -->
                 
-                <p><strong>The upright, forward-facing sword</strong> at the center of the logo stands as a timeless emblem of justice, authority and defense. The firm's unwavering commitment to uphold justice, law and national security whether through lethal intervention when absolutely necessary or through diplomatic precision rooted in lawful procedure.</p>
-                
-                <p><strong>The presence of blood splatter</strong> across the sword serves twofold in its meaning. First, it denotes the scientific rigor of forensic investigation, representing blood pattern analysis and DNA recovery - the foundation of modern criminal resolution. Reflecting our pledge to investigate with integrity, evidence, and scientific truth.</p>
-                
-                <p>Second, it solemnly honors the sacrificial blood shed by comrades during the Chimurenga - Umvukela struggles, whose heroic acts laid the foundation of Zimbabwe's sovereignty. Their courage is etched into the DNA of our operations, reminding us that our security mandate is built upon their blood-stained legacy.</p>
-                
-                <p><strong>The flag embedded or waved behind the sword</strong> affirms our firm's absolute loyalty to Zimbabwe's Constitution, sovereignty and democratic leadership. It conveys unquestionable patriotism, placing national interest and security above all and binding the institution to lawful governance and institutional ethics. It also represents unity, identity, and duty - values that every operative within Mayer must live by.</p>
-                
-                <p><strong>The lightning embedded in the logo</strong> is a symbol of speed, accuracy and tactical precision. It reflects our ability to respond rapidly under pressure, execute with surgical effectiveness and make decisive interventions within critical timeframes. In every operation, Mayer meets nothing less than Tier 01 standards, the benchmark of elite excellence in private security and investigations.</p>
-                
-                <p>The bolt reminds our operatives that every second counts and in that second our action must be swift, calculated and flawless.</p>
-                
-                <div class="firm-name">
-                    - General Mear Investigations and VIP Protection Security Firm
-                </div>
-            </div>
+                        
+            
         </div>
     </section>
 
-   <!-- Footer Section -->
+    <!-- Footer Section -->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="../images/logo.png" alt="Pegasus Security Logo" class="footer-logo-img">
+                    <img src="../images/logo.png" alt="General Mear Logo" class="footer-logo-img">
                     <div class="footer-logo-text">
                         <h3>GENERAL MEAR</h3>
                         <p>Investigations & Security</p>
@@ -894,69 +879,69 @@
                             <li><a href="../"><i class="fas fa-chevron-right"></i> Home</a></li>
                             <li><a href="../about/"><i class="fas fa-chevron-right"></i> About Us</a></li>
                             <li><a href="../#services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                            <li><a href="articles/"><i class="fas fa-chevron-right"></i> Articles</a></li>
-                            <li><a href="./"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                            <li><a href="./"><i class="fas fa-chevron-right"></i> Articles</a></li>
+                            <li><a href="../contact/"><i class="fas fa-chevron-right"></i> Contact</a></li>
                             <li><a href="../logo-meaning/"><i class="fas fa-chevron-right"></i> Our Logo</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column">
                         <h4>Contact Info</h4>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <p><strong>Location</strong></p>
-                                <p>CBZ Properties Gweru</p>
-                                <p>Apollo Court 153 Main Street Office 06</p>
+                        <div class="contact-info-footer">
+                            <div class="contact-item-footer">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p><strong>Location</strong></p>
+                                    <p>CBZ Properties Gweru</p>
+                                    <p>Apollo Court 153 Main Street Office 06</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <p><strong>Phone Numbers</strong></p>
-                                <p>+263 78 001 2279</p>
-                                <p>+263 77 153 4370</p>
-                                <p>+263 78 488 3904</p>
+                            <div class="contact-item-footer">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <p><strong>Phone Numbers</strong></p>
+                                    <p>+263 78 001 2279</p>
+                                    <p>+263 77 153 4370</p>
+                                    <p>+263 78 488 3904</p>
+                                </div>
                             </div>
-                        </div>
-
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-
-                
                 <div class="copyright">
                     <p>&copy; 2026 General Mear. All rights reserved.</p>
-
                 </div>
             </div>
         </div>
     </footer>
-
 
     <script>
         // Mobile Navigation Toggle
         const mobileToggle = document.getElementById('mobileToggle');
         const mainNav = document.getElementById('mainNav');
         
-        mobileToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            mobileToggle.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
+        if (mobileToggle && mainNav) {
+            mobileToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                mobileToggle.innerHTML = mainNav.classList.contains('active') 
+                    ? '<i class="fas fa-times"></i>' 
+                    : '<i class="fas fa-bars"></i>';
+            });
+        }
         
         // Close mobile nav when clicking on a link
         const navLinks = document.querySelectorAll('nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mainNav.classList.remove('active');
-                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                if (mainNav) {
+                    mainNav.classList.remove('active');
+                    if (mobileToggle) {
+                        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
             });
         });
         
@@ -964,12 +949,10 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
@@ -977,6 +960,19 @@
                 }
             });
         });
+        
+        // Newsletter form submission
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert('Thank you for subscribing! You will receive our latest security insights.');
+                    this.reset();
+                }
+            });
+        }
     </script>
 </body>
 </html>
